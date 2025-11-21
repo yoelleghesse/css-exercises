@@ -5,6 +5,10 @@
 
 .container {
   text-align: center;
+  gap: 4px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
 }
 
 .container div {
@@ -17,6 +21,7 @@
 
 .header {
   background-color: #393f4d;
+  grid-template-columns: repeat(2, 1fr); 
 }
 
 .menu ul,
@@ -24,8 +29,15 @@
   font-size: 16px;
 }
 
+.menu ul {
+  display: grid;
+}
+
 .sidebar {
   background-color: #C50208;
+  gap: 50px;
+  display: grid;
+  align-items: center;;
 }
 
 .sidebar .photo {
@@ -51,6 +63,10 @@
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.nav ul {
+  display: grid;
 }
 
 .article {
